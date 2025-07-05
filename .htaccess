@@ -1,0 +1,50 @@
+# Prevent direct access to hidden files via web browser
+<Files ".*">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Allow access to .hidden_credentials.php via include only
+<Files ".hidden_credentials.php">
+    Order allow,deny
+    Allow from all
+</Files>
+
+# Prevent access to database initialization file after setup
+<Files "init_db.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Security headers
+Header# CTF Vulnerable Web Application
+
+## Overview
+This is a deliberately vulnerable web application designed for CTF competitions and security education. It demonstrates Remote File Inclusion (RFI) vulnerabilities and privilege escalation techniques.
+
+## File Structure
+# Prevent direct access to hidden files via web browser
+<Files ".*">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Allow access to .hidden_credentials.php via include only
+<Files ".hidden_credentials.php">
+    Order allow,deny
+    Allow from all
+</Files>
+
+# Prevent access to database initialization file after setup
+<Files "init_db.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Security headers
+Header# CTF Vulnerable Web Application
+
+## Overview
+This is a deliberately vulnerable web application designed for CTF competitions and security education. It demonstrates Remote File Inclusion (RFI) vulnerabilities and privilege escalation techniques.
+
+## File Structure
